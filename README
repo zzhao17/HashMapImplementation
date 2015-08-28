@@ -1,0 +1,39 @@
+# HashMapImplementation
+
+The content of this README file:
+  + The content of this project
+  + How to run HashMapImplementation
+  + Purpose
+  + Design
+  + Author
+  + License
+
+* The content of this project:
+  MyHashMap.java
+
+* How to run HashMapImplementation:
+  To run this program, simply clone MyHashMap.java listed to local directory, open a java IDE and choose the local directory as 
+  the working space.
+
+* Purpose:
+  To mimic the behavior of the class hashmap. 
+
+* Design:
+  Using an array of LinkedList (Java class) to initialize MyHashMap with the specified initial capacity or with the capacity of 30 without any argument. 
+
+  Once the load_Factor is reached, the map will be automatically expanded. Since MyHashMap takes generic types, the users should implement their own hashcode. 
+
+  To be added, a KVPair is placed in an LinkedList with the corresponding hashcode%capacity. 
+
+  To be removed, the hashcode of the target KVPair will be calculated and deleted from the corresponding LinkedList.
+
+  To check if a certain KVPair is contained, the hashcode will be calculated and the program goes to the row with corresponding hashcode%capacity and searches for the target KVPair.
+
+  The highlight is that this program also implements the iterator, which includes hashNext() and next().
+
+* Author:
+  Zhan Zhao
+  zzhao17@syr.edu
+
+* License:
+  Open Source
